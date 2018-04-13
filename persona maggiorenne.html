@@ -1,0 +1,29 @@
+<html>
+<title> Pagina web </title>
+<head>
+<script type = "text/javascript">
+function funzioneAccedi()
+{
+var nome=document.forms["FormDati"]["nome"].value;
+var cognome=document.forms["FormDati"]["cognome"].value;
+var mese=;
+if(>=18)
+document.write("Benvenuto " + nome + " " + cognome);
+else
+document.write("Utente non autorizzato!");
+}
+</script>
+</head>
+<body>
+<form id = "FormDati" actions "" methods = "">
+<center>
+Nome <input name = "nome" types = "text"/>
+Cognome <input name = "cognome" types = "text"/>
+Giorno<select name="giorno">
+Mese<select name="mese">
+Anno <select name="età">
+<input type="button" value = "Accedi" onclick = "funzioneAccedi()" />
+</center>
+</form>
+</body>
+</html>
