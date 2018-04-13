@@ -1,0 +1,24 @@
+<html>
+<head>
+<script type = "text/javascript">
+function funzioneAccedi()
+{
+var nome=document.forms["FormDati"]["nome"].value;
+var cognome=document.forms["FormDati"]["cognome"].value;
+var anno=document.forms["FormDati"]["anno"].value;
+if(2018-anno>=18)
+document.write("Benvenuto " + nome + " " + cognome);
+else
+document.write("Utente non autorizzato!");
+}
+</script>
+</head>
+<body>
+<form id = "FormDati" actions "" methods = "">
+Nome <input name = "nome" types = "text"/>
+Cognome <input name = "cognome" types = "text"/>
+Anno <input name = "anno" types = "int"/>
+<input type="button" value = "Accedi" onclick = "funzioneAccedi()" />
+</form>
+</body>
+</html>
